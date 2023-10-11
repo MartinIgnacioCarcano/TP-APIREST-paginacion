@@ -1,0 +1,426 @@
+{
+	"info": {
+		"_postman_id": "2cfa5511-36a4-4e11-8c7e-0325f3c547ca",
+		"name": "TpApiRequest PAGED",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30258354"
+	},
+	"item": [
+		{
+			"name": "Persona",
+			"item": [
+				{
+					"name": "Get all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://apirestpaginacion-jem7.onrender.com/api/v1/personas",
+							"protocol": "https",
+							"host": [
+								"apirestpaginacion-jem7",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"personas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get one",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://apirestpaginacion-jem7.onrender.com/api/v1/personas",
+							"protocol": "https",
+							"host": [
+								"apirestpaginacion-jem7",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"personas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Martin\",\r\n    \"apellido\": \"Carcano\",\r\n    \"dni\": \"43151297\",\r\n    \"domicilio\": {\r\n        \"calle\": \"Avenida SiempreViva\",\r\n        \"numero\": 742,\r\n        \"localidad\": {\r\n            \"id\": 1,\r\n            \"denominacion\": \"Maipu\"\r\n        }\r\n    },\r\n    \"libros\": [\r\n        {\r\n            \"titulo\": \"La vuelta al mundo en 80 dias\",\r\n            \"fecha\": 1929,\r\n            \"genero\": \"ficcion\",\r\n            \"paginas\": 1900,\r\n            \"autores\": [\r\n                {\r\n                    \"id\": 1,\r\n                    \"nombre\": \"Julio\",\r\n                    \"apellido\": \"Verne\",\r\n                    \"biografia\": \"Nacio en el año x y se murio en el año tanto\"\r\n                }\r\n            ]\r\n        }\r\n    ]\r\n}"
+						},
+						"url": {
+							"raw": "https://apirestpaginacion-jem7.onrender.com/api/v1/personas",
+							"protocol": "https",
+							"host": [
+								"apirestpaginacion-jem7",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"personas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "https://apirestpaginacion-jem7.onrender.com/api/v1/personas",
+							"protocol": "https",
+							"host": [
+								"apirestpaginacion-jem7",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"personas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://apirestpaginacion-jem7.onrender.com/api/v1/personas",
+							"protocol": "https",
+							"host": [
+								"apirestpaginacion-jem7",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"personas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "finByNamePaged",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://apirestpaginacion-jem7.onrender.com/api/v1/personas/findByNombrePaged?filtro=Martin&page=0&size=5&short=id,desc",
+							"protocol": "https",
+							"host": [
+								"apirestpaginacion-jem7",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"personas",
+								"findByNombrePaged"
+							],
+							"query": [
+								{
+									"key": "filtro",
+									"value": "Martin"
+								},
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "5"
+								},
+								{
+									"key": "short",
+									"value": "id,desc"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Autores",
+			"item": [
+				{
+					"name": "Get all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://apirestpaginacion-jem7.onrender.com/api/v1/autores",
+							"protocol": "https",
+							"host": [
+								"apirestpaginacion-jem7",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"autores"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get one",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://apirestpaginacion-jem7.onrender.com/api/v1/autores",
+							"protocol": "https",
+							"host": [
+								"apirestpaginacion-jem7",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"autores"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Julio\",\r\n    \"apellido\": \"Verne\",\r\n    \"biografia\": \"Nacio en el año x y se murio en el año tanto\"\r\n}"
+						},
+						"url": {
+							"raw": "https://apirestpaginacion-jem7.onrender.com/api/v1/autores",
+							"protocol": "https",
+							"host": [
+								"apirestpaginacion-jem7",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"autores"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "https://apirestpaginacion-jem7.onrender.com/api/v1/autores",
+							"protocol": "https",
+							"host": [
+								"apirestpaginacion-jem7",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"autores"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://apirestpaginacion-jem7.onrender.com/api/v1/autores",
+							"protocol": "https",
+							"host": [
+								"apirestpaginacion-jem7",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"autores"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Localidades",
+			"item": [
+				{
+					"name": "Get all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://apirestpaginacion-jem7.onrender.com/api/v1/localidades",
+							"protocol": "https",
+							"host": [
+								"apirestpaginacion-jem7",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"localidades"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get one",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://apirestpaginacion-jem7.onrender.com/api/v1/localidades",
+							"protocol": "https",
+							"host": [
+								"apirestpaginacion-jem7",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"localidades"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"denominacion\": \"Maipu\"\r\n}"
+						},
+						"url": {
+							"raw": "https://apirestpaginacion-jem7.onrender.com/api/v1/localidades",
+							"protocol": "https",
+							"host": [
+								"apirestpaginacion-jem7",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"localidades"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "https://apirestpaginacion-jem7.onrender.com/api/v1/localidades",
+							"protocol": "https",
+							"host": [
+								"apirestpaginacion-jem7",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"localidades"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://apirestpaginacion-jem7.onrender.com/api/v1/localidades",
+							"protocol": "https",
+							"host": [
+								"apirestpaginacion-jem7",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"localidades"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
